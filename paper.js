@@ -21,8 +21,10 @@ class Paper
     push();
     translate(pos.x, pos.y);
     rotate(angle);
-    ellipseMode(CENTER);
-    ellipse(0, 0, this.radius);
+    /*ellipseMode(RADIUS);
+    ellipse(0,0,this.radius, this.radius);*/
+    imageMode(CENTER);
+    image(this.image,0, 0,this.radius+30, this.radius-50);
     pop();
   }
 };
